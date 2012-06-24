@@ -1,6 +1,6 @@
 var M = new Machine();
-// without convenience functions
 
+// without convenience functions
 tick = function(m,s){
 	if(s === "update"){
 		console.log("updating tick;");
@@ -19,12 +19,12 @@ tock = function(m,s){
 
 // using state constructor
 // using single function makes it for update
-tick = state(function(m){
+tick = Machine.state(function(m){
 	m.next = tock;
 });
 
 // you can specify also all other types
-tock = state({
+tock = Machine.state({
 	start : function(m){
 		console.log("starting tock");
 	},
@@ -36,7 +36,7 @@ tock = state({
 
 // using states function
 // this is for defining multiple states at once
-M.$ = states({
+M.$ = Machine.states({
 	tick : function(m){
 		console.log("tick");
 		m.next = m.$.tock;
@@ -69,7 +69,7 @@ Tock.prototype.start = function(m){
 	console.log("entered start in " + this.msg);
 }
 
-M.$ = states({
+M.$ = Machine.states({
 	tick : new Tick(),
 	tock : new Tock()
 });

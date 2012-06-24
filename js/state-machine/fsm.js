@@ -14,30 +14,31 @@ Machine.prototype.update = function(){
 	m.cur(m, "update");
 };
 
-// TODO: encapsulate inside Machine
-// convenience functions
-function state(func){
-	if(typeof func === "function"){
+// convenience function for creating state function
+Machine.state = function(obj){
+	if(typeof obj === "function"){
 		return function(m, s){
 			if(s !== "update") return;
-			func(m);
+			obj(m);
 		};
-	} else if (typeof func === "object"){
+	} else if (typeof obj === "object"){
 		return function(m, s){
-			var f = func[s];
+			var func = obj[s];
 			if(typeof f === "function")
-				f.call(func, m);
+				func.call(obj, m);
 		}
 	} else {
-		throw { msg: "unable to construct state", object: func };
+		throw { msg: "unable to construct state", object: obj };
 	}
 }
 
-function states(st){
+// convenience function for creating multiple state functions
+Machine.states = function(states){
 	var r = {};
-	for(var name in st){
-		if(!st.hasOwnProperty(name)) continue;
-		r[name] = state(st[name]);
+	for(var name in states){
+		if(!states.hasOwnProperty(name))
+			continue;
+		r[name] = state(states[name]);
 	}
 	return r;
 }
