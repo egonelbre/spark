@@ -38,7 +38,7 @@ Machine.states = function(states){
 	for(var name in states){
 		if(!states.hasOwnProperty(name))
 			continue;
-		r[name] = state(states[name]);
+		r[name] = Machine.state(states[name]);
 	}
 	return r;
 }
