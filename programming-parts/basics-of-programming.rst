@@ -10,7 +10,7 @@ In the simplest form what a programmer does is solve a problem or reaches a goal
 
 Here's my interpretation how these things work together:
 
-.. image:: model.png
+.. image:: graphics/model.png
 
 I also gave those forces some arbitrary names:
 
@@ -65,7 +65,7 @@ Since skills are also things that can produce new skills and help us gain knowle
 
 Coming back to the model we can also see what happens, if a person tries to take a shortcut or we teach by explaining the correct solution.
 
-.. image:: modelshortcut.png
+.. image:: graphics/model-shortcut.png
 
 Imagine you are solving a sudoku and at stage 2, where you hit your first difficult problem someone else comes and solves the sudoku for you. This would mean that you won't feel the "high" and are less likely to try solving a sudoku again, since the perceived reward has decreased. More importantly what happens is that you fail to learn skills required to overcome obstacles 2 and 3.
 
