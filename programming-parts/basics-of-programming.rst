@@ -1,89 +1,81 @@
 Basics of programming
 =====================
 
-A model of programming
-----------------------
+A model of problem solving
+--------------------------
 
 Before we go into details we should have some intuition how different things affect the programmer.
 
-In the simplest form what a programmer does is solve a problem or reaches a goal. There are some things that make reaching goal easier, some that make it harder. Programming can create quite extreme emotional states - so to understand the whole picture we must take it into account as well.
+In the simplest form programmer solves a problem. There are some things that make reaching goal easier, some that make it harder. Programming can create quite extreme emotional states - therefore to understand the whole picture we must take it into account.
 
 Here's my interpretation how these things work together:
 
 .. image:: graphics/model.png
 
-I also gave those forces some arbitrary names:
+I also gave those forces some descriptive names:
 
 * movement: things that make you move towards your goal
 * friction: things that make your movement harder and hinder you from reaching your goal
 * uppers: things that make you feel good
 * downers: things that make you feel bad
 
-When looking the scale "mood", remember it's more of an abstract scale than manic to depression scale.
+When looking the "mood" axis, remember it's more of an abstract scale.
 
-The whole process is very similar to solving a sudoku. Since the time frame is much shorter it's much better to look at that example than programming.
+Since it's much easier to explain the model with sudoku, will start with that. Time frame for it is much shorter and most people are already familiar with it.
 
-When we begin, we have some good state and see the challenge.
+At the starting point we are eager to solve problem
 
-* 1: we realize the actual difficulty of the problem and become focused. We also start to fill in some of the blanks.
-* 2: we have some difficult stage, where we need to have more effort to move forward. Once we break this difficult stage, we get this small high of solving a small problem.
-* 3: we realize that we know how to solve the puzzle and go through with this solving until at...
-* 4: we completed it. In stage 4 we have this "high" of reaching a goal.
+1. stage, we realize the actual difficulty of the problem and become focused. We also start to fill in the easier parts of the sudoku.
+2. stage, we have a difficult stage, where we need to have more effort to move forward. Once we break this difficult stage, we get this small high of solving a small problem.
+3. stage, we realize that we know how to solve the puzzle and go through with solving it
+4. stage, we completed it, finally we have this "high" of reaching a goal.
 
-Here we can see what produces the addictiveness of sudokus. This low mood, struggle and finally the high. This is the same reason why programmers program and get enjoyment out of it.
+Here we can see what produces the addictiveness of sudokus. This low mood, struggle and finally the high. This is the same reason why programmers lose track of time when programming. The addictivness can also be explained by flow, as described by Mihaly Csikszentmihalyi.
 
-What are these forces composed of?
+So, what are these forces composed of?
 
-* uppers = progress + solving subgoals + new skills + understanding + serendipity
-	
-	When we make progress we make us feel better. Breaking some difficult subgoals will give us a small high. When we understand or gain new skills we also feel good about ourselves. Serendipity is also sometimes nice to have, when you made a guess and it turned out to be correct.
-
+* uppers = progress + solving subgoals + acquiring new skills + understanding + serendipity
 * downers = no progress + failures + perceived difficulty + feeling stupid + pressure
-	
-	When we make no progress we feel bad. This "no progress" may also
-	make you feel stupid. One part of friction is perceived difficulty,
-	whether or not we see the goal achievable. If we are under pressure, we feel more stressed.
-
 * friction = difficulty + bad tools + bad mood
-
-	Difficulty - how many hints you have and how easy it is to derive the
-	next number. Bad tools are also a important part of friction. For example
-	if you do not have a pen to solve sudoku, remembering all the numbers
-	makes things much harder. Also using pen vs pencil make things different.
-
 * movement = perceived reward * ( skills + knowledge + good tools + good mood )
-	
-	Perceived reward is the thing that makes us want to apply the things we know and struggle against friction more, hence it affects all the other parts of movement. Good tools - when we have a pencil we are more likely to try out different things just by guessing. Knowledge is also an important part of moving forward - if we don't know how to write numbers or use the tools, it's much harder to progress. Also if we have solved many sudokus we have more intuition how to approach the problem.
 
-	Skills - these are the things, the derivation rules. How to cope with difficult situations. There are also skills that help us develop new skills and gain new knowledge.
+In sudoku difficulty is how easy is to derive the next number. When using bad tools such as pen or no writing at all the required skill level must be higher. If we have a pencil we can do much more easily guesses and tries.
 
-If we now go back to programming, these things stay the same. Serendpity is when we make a change and something interesting or cool happens... or if we use a difficult toolchain it makes more friction. And so on...
+Perceived reward is the thing that makes us want to apply the things we know and struggle against friction more, hence it affects all other parts of movement. This suggests that learning theory without a goal requires more effort than trying to solve a problem while learning theory as a solution. This means learning must start from a problem, not from theory.
 
-If we now consider what parts of the diagram are affected when we change the language or in which order we teach language constructs (such as "if", "for", "assignment") then we realize that we are not actually focusing on the real problem. Language and language constructs are just tools and knowledge. Currently when considering what to learn first a lot of effort goes to picking the right language, language that has the least friction. Language is just some knowledge and skills are the crucial part of programming.
+Skills are the things that help us derive new numbers. Knowledge is how a number looks like and what is a goal.
 
-Since skills are also things that can produce new skills and help us gain knowledge they are invaluable to a programmer. So the actual question is "What is the most effective set of skills and knowledge that helps to overcome friction and can produce any other skill and knowledge required". This doesn't necessarily mean the minimal set, since "learn a new thing" wouldn't work that effectively.
+Here we can see that the thing we can learn are knowledge, tools and skills. This suggests that any learning must affect all three areas.
 
-Coming back to the model we can also see what happens, if a person tries to take a shortcut or we teach by explaining the correct solution.
+If we now go back to programming, the main components stay the same.
+
+Let's consider how to categorize language, frameworks, toolchains. Mainly they are just knowledge and tools. This means that picking the right tools only affects friction, not necessarily the skills. Any debate about which language to use for learning is about how much friction can people handle.
+
+By lowering friction we are also lowering the skill required to accomplish the task - which may not be the best solution for learning. You must be able deal with the friction - how to keep going towards goal, even if you everything is working against you.
+
+When people are not ready to deal with friction they either give up, cheat or get help. But, if they have necessary skills they can still make progress.
+
+Let's try to imagine what happens if a person "cheats" when learning.
 
 .. image:: graphics/model-shortcut.png
 
-Imagine you are solving a sudoku and at stage 2, where you hit your first difficult problem someone else comes and solves the sudoku for you. This would mean that you won't feel the "high" and are less likely to try solving a sudoku again, since the perceived reward has decreased. More importantly what happens is that you fail to learn skills required to overcome obstacles 2 and 3.
+Imagine you are solving a sudoku and at stage 2, where you hit your first difficult problem, someone else comes and solves the sudoku for you. This would mean that you won't feel the "high" and are less likely to try solving a sudoku again. The perceived reward has also decreased. More importantly what happens is that you fail to learn skills required to overcome obstacles 2 and 3.
 
 In programming this means that when you cheat or take a shortcut the necessary skills won't be acquired. This could also include skills how to learn new skills and how to deal with friction. Any hint about solution will increase the knowledge, but it will not increase skills. Therefore any helping should be focused on which skills to apply or use, not what is the quickest way to the solution.
 
-Programmers in real life have to deal with friction whether they like it or not, it is therefore important to learn how deal with it. Friction makes you feel stupid or stressed. Although it may look that good programmers don't have that anymore, in reality, they have just learned to ignore those things.
+Programmers in real life have to deal with friction every day whether they like it or not. Friction makes you feel stupid and stressed. Although it may look that good programmers don't get that anymore, in reality, they have just learned to ignore those things.
 
-	"Keep trying even if you feel lost, it's just one stage of problem solving."
+	"Keep trying even if you feel lost, it's just one part of problem solving."
 
-If we do not set a goal the perceived reward will be unknown and therefore anyone trying to reach it will be less motivated to do so. This means that learning theory without any practical goal will require more effort than trying to reach a practical goal and learning theory as a solution to the goal.
+In programming the skills are the much more important than knowledge, tools. Skills help us learn new skills and gain knowledge. For learning programming the most important question is "What is the most effective set of skills and knowledge that helps overcome friction and can produce any other skill and knowledge required?" This Doesn't necessarily mean the minimal set, since "learn a new thing" wouldn't work that effectively.
 
-HtDP_ ("How to Design Programs") puts it all together quite nicely:
+HtDP_ ("How to Design Programs") puts all these ideas together quite nicely:
 
 	"Programming a computer requires patience and concentration. Only attention to minute details will avoid frustrating grammatical mistakes. Only rigorous planning and adherence to the plan will prevent serious logical mistakes in our designs. But when we finally master the design of programs, we will have learned skills that are useful far beyond the realm of programming."
 
-So what are the programming skills that are the main drivers of movement and what are the skills that also increase the movement speed. Also what is the knowledge that helps us in programming?
+So what are the programming skills that are the main drivers of movement. What is the most basic knowledge and skills that makes people programmers?
 
-	The most important skill is how to acquire skills and knowledge effectively. Everything else can be acquired effectively.
+	"The most important skill is how to acquire skills and knowledge effectively. Everything else can be acquired effectively."
 
 
 Meaning of things
@@ -131,13 +123,10 @@ None of these behaviours is "wrong" (remember computers are stupid and they don'
 
 We found several skills here: shifting through the different meanings of the program, destroying your assumptions and misconceptions. Capablity of understanding flaws in your thinking and correct them as needed to match the program. If something seems weird, it's because you assume some invalid behaviour.
 
-	The only thing, that shows what a program does, is what it actually does.
-
-
 Making things concrete
 ----------------------
 
-One thing that is most visible thing about programming is writing programs. Since computers are very, very stupid we need to get from some vague idea to the actual implementation. We need to explain every single detail until there is no though required to follow the instrutions.
+One thing that is most visible thing about programming is writing programs. Since computers are very, very stupid we need to get from some vague idea to the actual implementation. We need to explain every single detail until there is no thought required to follow the instrutions.
 
 Let's consider a "box moving from left to right". How to turn this into code? One easy way is to recursively specify each single part in some convenient pseudocode until it resembles the language you are writing in, and finally make it compilable.
 
@@ -155,7 +144,7 @@ What do we mean by change it's position? It's just change in the "x" coordinate.
 	// 		box.x = box.x + 10
 	// }
 
-Now what do we mean by "left to right and back"? From "left to right" means that we start from coordinate "0" and move until the width of the screen, at which point we should go back. Which means that if our box x coordinate has reached width of the screen we should start moving back.
+Now what do we mean by "left to right and back"? From "left to right" means that we start from coordinate "0" and move until the width of the screen, at which point we should go back. Which means that if our box x coordinate has reached width of the screen we should start moving back::
 
 	// left = 0;
 	// right = screen.width;
@@ -165,7 +154,7 @@ Now what do we mean by "left to right and back"? From "left to right" means that
 	//    when box.x reach right start moving back
 	// }
 
-What do we mean by "reach"? This means that when "box.x > right". What do we mean by "moving back"? This means that we should start moving in the opposite direction. We need to change the "+10" to "-10" - we change it if it's a variable.
+What do we mean by "reach"? This means that when "box.x > right". What do we mean by "moving back"? This means that we should start moving in the opposite direction. We need to change the "+10" to "-10" - we change it if it's a variable::
 
 	// speed = 10;
 	// left = 0;
@@ -226,6 +215,8 @@ In the previous code we should finally find that when the box reaches the left s
 
 Understanding the system and how it behaves and having an intuition is important, otherwise we will be making changes without being able to predict the consequences.
 
+	The only thing, that shows what a program does, is what it actually does.
+
 Reaching the goal
 -----------------
 
@@ -249,13 +240,12 @@ One version of this subdivision is "wishful thinking" from SICP_ (Structure and 
 
 Making goal more approachable can also be done by studying similar problems. If we wish to move something on the screen, we may want to study how a car moves. If we wish to write a game we should study other games.
 
-	Great programs, algorithms, solutions, ideas don't just spring into life by a magical wish, they start as a seed and are slowly grown until one day a blossom appears. Seeing a master produce a flower from his hands in a blink of an eye, is not because he wished for it, but because he has a garden he cares for.
-
+	Great programs, algorithms, solutions, ideas don't just spring into life by a magical wish, they start as a seed and are slowly grown until one day a blossom appears. Seeing a master produce a flower from his hands in a blink of an eye, is not because he wished for it, but because he has a Sgarden he cares for.
 
 Limits
 ------
 
-As humans we have several limitations in our processing power. We can't think over 5 things at once (not an exact number) nor can we remember everything. If we just keep adding things and modifying out code we will reach this limit quite quickly. If the code isn't in our capabilities there is a large risk of introducing bugs.
+As humans we have several limitations in our processing power. We can at most 7+-2 things at once (not an exact number) nor can we remember everything. If we just keep adding things and modifying out code we will reach this limit quite quickly. If the code isn't in our capabilities there is a large risk of introducing bugs.
 
 First limititation is typing speed. The solution to this is reducing the repetetive code. In it's simplest form, if we have three places where we use similar source code, we can group it and replace those places with functions. In a more complex way, we can implement a domain specific language to do the grunt work and leave us writing about the important things. These two skills are lazyness and recognizing repetition. This also removes friction from the coding process, since we don't have to repeat ourselves.
 
@@ -281,7 +271,7 @@ One example would be::
 
 If we use inconsistent style our code will become hard to read similarly to a book that is written in different languages and in mid-sentence goes over to a poem. Keeping consistent style is easy and has good benefits.
 
-When using idioms we can start to intuitively reason about code. If you have had a lot of experience in C-style for loops then some of those will feel weirder than others:
+When using idioms we can start to intuitively reason about code. If you have had a lot of experience in C-style for loops then some of those will feel weirder than others::
 
 	for( i = 0; i <= length-1; i += 1) {}
 	for( i = 0; i < length; i++ ) {}
@@ -303,8 +293,6 @@ Finally, when making things simpler it's also necessary to have a good understan
 	Making complexity is easy.
 	Using complexity is hard.
 	Understanding complexity is impossible.	
-	
-	---
 
 	Understanding simplicity is possible.
 	Using simplicity is easy.
