@@ -1,6 +1,8 @@
 Basics of programming
 =====================
 
+The first part introduces a model for understanding how different things (such as skill, knowledge, language) affect the programmer. It also tries to figure out what makes a programmer a programmer.
+
 A model of problem solving
 --------------------------
 
@@ -78,6 +80,7 @@ So what are the programming skills that are the main drivers of movement. What i
 	"The most important skill is how to acquire skills and knowledge effectively. Everything else can be acquired effectively."
 
 
+
 Meaning of things
 -----------------
 
@@ -85,9 +88,9 @@ The first important insight about computers is that
 
 	Computers are stupid... very, very stupid.
 
-If a person comes from using computers to programming computers this may feel weird. The computer seems intelligent to a user. We also use language to convey instructions to the computer and that also looks like it understands things.
+If a person moves from using computers to programming this may feel weird. The computer seems intelligent to a user, we use language to convey instructions to the computer and that also looks like it understands things. The simplest example of such intelligence would be Google.
 
-For example when I say to you "elephant is pink", you probably will imagine a pink elephant, with a trunk, ears, legs and a tail. We have a lot of assumptions about things. Even the color pink is a thing we assume to exist.
+What happens when people process language? For example when I say to you "elephant is pink", you probably will imagine a pink elephant, with a trunk, a few ears, legs and a tail. We have a lot of assumptions about things. Even the color pink is a thing we assume to exist.
 
 Now when we do the same thing in some programming language::
 
@@ -117,11 +120,13 @@ What is the value of x? Here are the options:
 
 If you are a good programmer you probably realized that the correct answer is "all of the above".
 
-In the imperative language "=" means assignment, meaning we set this value to this variable. In a functional language "=" means we assign this value to this symbol and any further reassignments is forbidden. In a semantic meaning "=" specifies a condition and that must be held in the future unless it's redefined. Any of these is a valid assumption to have, but as a programmer you must realize that all of them are possible.
+In the imperative language "=" means assignment, meaning we assign this value to that variable. In a functional language "=" means we declare a symbol for this valueand any further declaration is forbidden. In semantic meaning "=" could specify a condition and that it must be held in the future unless it's redefined. Any of these is a valid assumption to have, but as a programmer you must realize that all of those contexts are possible.
 
 None of these behaviours is "wrong" (remember computers are stupid and they don't care what the "=" thing means), but some of these behaviours may be more intuitive and favorable depending on the context.
 
-We found several skills here: shifting through the different meanings of the program, destroying your assumptions and misconceptions. Capablity of understanding flaws in your thinking and correct them as needed to match the program. If something seems weird, it's because you assume some invalid behaviour.
+We found several skills here: shifting through the different meanings of the program, destroying your assumptions and misconceptions. Capability of understanding flaws in your thinking and correct them as needed to match the program.
+
+
 
 Making things concrete
 ----------------------
@@ -182,7 +187,9 @@ Converting this into actual code is mostly reasearch how a language exactly work
 		}
 	}
 
-This is actually quite easy, but this way of implementing things does not scale, it is a necessary skill nevertheless.
+As we can see we didn't start from writing in the programming language from the start. It may look like many programmers start from writing in a programming language - in reality they just do the first parts in their head and translate the result into code.
+
+There are of course other ways of explaining things to the computer, but for beginners this is enough. The whole process is quite easy if the programming language is taken out.
 
 
 Programs do what they do
@@ -190,11 +197,11 @@ Programs do what they do
 
 When we would run the previous code we would discover that it didn't work the way it supposed to. The box moves first to right and then back and then off the screen. That is a bug.
 
-We need to understand what the program actually does, since the model in our head and the thing program does do not match up. One common mistake is to immeditely start to change the code without actually understanding the code. This understanding is important as this is the only way we can build intution about how code behaves. When we have intution and understanding about the system we can make reasoned bug fixes.
+We need to understand what the program actually does, since the model in our head and the thing program does do not match up. One common mistake is to immeditely start to change the code without actually understanding the code. This understanding is important as this is the only way we can build intution about how code behaves. When we have intution and understanding about the system we can make reasoned fixes.
 
-Correct way would be to analyse the code - maybe try changing some parameters, then try to predict what happens and then actually see whether it happens. If there are lot's of "moving parts" then try to reduce the system to the bare minimum where the problem occurrs. Do something to make the problem occur faster.
+Correct way would be to analyse the code - maybe try changing some parameters and try to predict what happens and finally test whether it happens. If there are lot's of "moving parts" then try to reduce the system to the bare minimum where the problem occurs. Or do something to make the problem occur faster.
 
-In the previous code we should finally find that when the box reaches the left side it doesn't turn around again. If we now remember our initial vague idea "box moving from left to right and back", we see that we did not specify that it should do that repeatedly. This means that bugs isn't always in the code it may be also in our head. Maybe we didn't anticipate some corner cases, maybe we didn't specify the behaviour explicitly enough. In this case the solution is simple, just add this extra condition::
+In the previous code we finally find that when the box reaches the left side it doesn't turn around again. If we now remember our initial vague idea "box moving from left to right and back", we see that we did not specify that it should start moving right again. This means that the bugs aren't always in the code it may be also in our head. Maybe we didn't anticipate some corner cases, maybe we didn't specify the behaviour explicitly enough. In this case the solution is simple, just add this extra condition::
 
 	var speed = 10,
 		left = 0,
@@ -215,39 +222,41 @@ In the previous code we should finally find that when the box reaches the left s
 
 Understanding the system and how it behaves and having an intuition is important, otherwise we will be making changes without being able to predict the consequences.
 
-	The only thing, that shows what a program does, is what it actually does.
+	"The only thing, that shows what a program does, is what it actually does."
+
+
 
 Reaching the goal
 -----------------
 
 One misconception about great problem solvers is that they know the solution to any problem. Actually they know how to solve the problem. So what's the difference?
 
-I had this overview of algorithms as some ideas that someone just came up with. They just had this cool idea and then did some analysis on it and finally published an article about it. I've never even thought about this assumption deeply. When I read "The Algorithm Design Manual", especially the "War Story" parts, I realized that my assumptions were wrong.
+	I had this overview of algorithms as some ideas that someone just came up with. The whole process would look like: idea -> analysis -> article. I actually didn't even think about this assumption deeply. After I read "The Algorithm Design Manual", especially the "War Story" parts, I realized that my assumptions were wrong.
 
-The "War Story" parts were descriptions of deriving algorithms and putting ideas together and discussion between people and failures and testing of speed. Essentially they were descriptions how algorithms are modified, designed and put together. The process to a complete algorithm was made visible.
+	The "War Story" parts were descriptions of deriving algorithms and putting ideas together and discussion between people, failures and testing. Essentially they were descriptions how algorithms are modified, designed and put together. The process to designing algorithms was made visible.
 
-After that I had less fear of trying to come up with algorithms or design things, because I understood that I do not have to solve the whole problem at once. This is a trivial point, but has deeper meaning in the process.
+	After that I had less fear of trying to come up with algorithms or design things, because I understood that I do not have to solve the whole problem at once. This is a trivial point, but has deeper meaning in the process.
 
-If we would consider a student trying to implement an operating system, it would seem that this is unimaginable. Or this would be overestimating the skills of the student, maybe a little. Once we accept that we do not have to know the full solution immediately, we can still make progress towards it.
+If we would consider a student trying to implement an operating system, it would seem unimaginable or we will be accused of overestimating the skills of the student. Once we accept that it's not necessary to know the full solution immediately, the problem becomes achievable.
 
-In the simplest terms, what does the OS do? Well it makes multiple programs work together, it talks to the "metal", it provides some services to the programs. Each of those is a much simpler idea than implementing OS, but if we understand each of those parts we probably have better knowledge and skills to deal with the actual problems. If we have trouble solving each of those problems we can recursively divide those problems until each part is easily solvable.
+In the simplest terms, what does the OS do? Well it makes multiple programs work together, it talks to the "metal", it provides some services to the programs. Each of those is a much simpler idea than implementing an OS, but if we understand each of those parts we probably have better knowledge and skills to deal with the actual problem. If we have trouble solving each of those problems we can recursively divide those problems until each part is easily solvable.
 
-This process may take time, but the important thing is that it removes the fear of trying to solve hard problems, it makes them reachable, it makes them simpler.
+This process may take time, but the important thing is that it removes the fear of trying to solve hard problems, it makes them reachable, it makes them simpler. If you start with big problems it's easier to learn this "sub-goaling".
 
 What are the other ways we can make our goals more attainable?
 
-One version of this subdivision is "wishful thinking" from SICP_ (Structure and Interpretation of Computer Programs). The idea is simple - you imagine that you can have anything in the world at your fingertips and you will write your code as such. Then you proceed to make some of the parts of the imagined world in the same way until you have nothing imagined and everything concrete.
+One version of this subdivision for programming is "wishful thinking" as described in SICP_ (Structure and Interpretation of Computer Programs). The idea is simple - you imagine that you can have anything in the world at your fingertips and you will write your code as such. Then you proceed to make some of the parts of the imagined world in the same way until you have nothing imagined and everything is concrete. (link to thorough explanation)
 
-Making goal more approachable can also be done by studying similar problems. If we wish to move something on the screen, we may want to study how a car moves. If we wish to write a game we should study other games.
+Making goal more approachable can also be done by studying similar problems. If we wish to move something on the screen, we may want to study how a car moves. If we wish to write a game we should study how other games have been implemented.
 
 	Great programs, algorithms, solutions, ideas don't just spring into life by a magical wish, they start as a seed and are slowly grown until one day a blossom appears. Seeing a master produce a flower from his hands in a blink of an eye, is not because he wished for it, but because he has a Sgarden he cares for.
 
 Limits
 ------
 
-As humans we have several limitations in our processing power. We can at most 7+-2 things at once (not an exact number) nor can we remember everything. If we just keep adding things and modifying out code we will reach this limit quite quickly. If the code isn't in our capabilities there is a large risk of introducing bugs.
+As humans we have several limitations in our processing power. We can hold in our heads at most 7+-2 things at once (not an exact number). We can't remember everything. We are incredibly fast. So, if we just keep adding things to and modifying code we will reach this limit quite quickly. If the code isn't in our capabilities there is a large risk of introducing bugs.
 
-First limititation is typing speed. The solution to this is reducing the repetetive code. In it's simplest form, if we have three places where we use similar source code, we can group it and replace those places with functions. In a more complex way, we can implement a domain specific language to do the grunt work and leave us writing about the important things. These two skills are lazyness and recognizing repetition. This also removes friction from the coding process, since we don't have to repeat ourselves.
+First limititation is typing speed. The solution to this is reducing the repetetive code. In it's simplest form, if we have three places where we use similar code/structure, we can group it and replace it with functions. In a more complex way, we can implement a domain specific language to do the grunt work and leave us writing about the important things. These two skills are lazyness and recognizing repetition. This also removes friction from the coding process, since we don't have to repeat ourselves.
 
 Next limitation is reading speed and our memory. If our whole code base is above 10,000,000 LOC it would require several weeks to read it through, let alone understand and remember it. The only solution here is to keep your LOC down by removing repetition and building abstractions.
 
@@ -255,7 +264,7 @@ Finally the most important limitation is our brain processing power. If we need 
 
 This skill can be called "handling complexity", although there are several sides to it. So what are the ways to handle complexity?
 
-The first is by training your processing capabilities and memory. This can be done by studying several systems and trying to understand them. There's a big problem with this, it doesn't scale, also building something that's near our limitations then debugging, adding and modifying probably lies outside of our limitations.
+The first is by training your processing capabilities and memory. This can be done by studying systems and trying to understand them. There's a big problem with this, it doesn't scale. We may now be able to think about 10 things but when we need to modify or add to it our brain will still make mistakes.
 
 Next rather simple way to handle complexity is by setting limitations, using consistent style and using idioms. These can remove a lot of thinking required to read code.
 
@@ -269,26 +278,33 @@ One example would be::
 	x += 1;
 	y = x*x;
 
-If we use inconsistent style our code will become hard to read similarly to a book that is written in different languages and in mid-sentence goes over to a poem. Keeping consistent style is easy and has good benefits.
+If we use inconsistent style our code will become hard to read similarly to a book that is written in different languages and in mid-sentence goes over to a poem. Keeping consistent style (after practicing) is easy and has great benefits.
 
-When using idioms we can start to intuitively reason about code. If you have had a lot of experience in C-style for loops then some of those will feel weirder than others::
+When using idioms we can start to intuitively reason about code. If you've had a lot of experience in C-style `for` loops then some of these will feel more natural than others::
 
 	for( i = 0; i <= length-1; i += 1) {}
+
 	for( i = 0; i < length; i++ ) {}
+
 	for( i = 0; length > i; i++ ) {}
+
 	for( i = 0; length-1 >= i; i = i + 1 ) {}
 
 Although all of them say the same thing our intuition will notify, if it's not our usual idiomatic way. If our intuition tells us that our code is wrong, although it is correct, it would be better to rewrite code such that it feels nice.
 
 	If our language use is pure and beautiful many mistakes and errors will pop out like a red dot on a black screen.
 
-The next strategy for handling complexity is ignoring things. We run our code on an OS that we can most of the time ignore. In a similar sense there are parts of code that do not affect other parts of code - so called invariants. But with ignoring things we can also ignore important things - so the question is how to write code such that it is easy to ignore things?
+The next strategy for handling complexity is ignoring things. We run our code on an OS that we can most of the time ignore. In a similar sense there are parts of code that do not affect other parts of code - so called invariants. With ignoring we can also accidentally ignore important things - so the question is how to write code such that it is easy to ignore things?
 
-One strategy is to divide code into parts that are not dependent on each other. The other strategy for ignoring things is abstraction. Abstractions gives us ability to think about things without dealing details. Understanding different ways of abstractions, how to make and use them is needed to make well written programs. When trying to make good abstractions it's important to know several ways of doing something. Never be satisfied with the first solution because it rarely is the best solution.
+One strategy is to divide code into parts that are not dependent on each other. The other strategy for ignoring things is abstraction. Abstractions gives us ability to think about things without dealing details. Understanding different abstractions, how to make and use them is needed to make simple programs. Quite good overview on them can be seen on [Wikipedia](http://en.wikipedia.org/wiki/Abstraction_(computer_science)).
+
+When trying to make good abstractions it's important to know several ways of doing something. Never be satisfied with the first solution because it rarely is the best solution.
 
 It's also important to realize that abstraction is not the end goal in itself. By over-abstracting we can start to increase the complexity again. Code and model (abstraction) should be in balance. In the same we can have too much code, we can have too many abstract ideas.
 
-Finally, when making things simpler it's also necessary to have a good understanding what "simple" and "complex", "easy" and "hard", "complecting" and "composing" mean. An excellent overview of simplicity was given by Rich Hickey in "Simple Made Easy".
+Finally, when making things simpler it's also necessary to have a good understanding what "simple" and "complex", "easy" and "hard", "complecting" and "composing" mean. An excellent overview of those words was given by Rich Hickey in "Simple Made Easy".
+
+When we do not understand what simple exactly means we don't know what is our goal.
 
 	Making complexity is easy.
 	Using complexity is hard.
@@ -308,7 +324,7 @@ HtDP_ gives a nice summary about programming:
 
 Unfortunately it doesn't give such precise and short overview of the "systematic process" that helps you do all of that.
 
-If we wish to teach/learn programming we must understand this "systematic process" throughly, otherwise we will be just hoping that people somehow manage to derive this process themselves. We must understand the fundamental skills and knowledge.
+If we wish to teach/learn programming effectively we must understand this "systematic process" throughly, not just hope that people somehow manage to derive this process themselves. We must understand the fundamental skills and knowledge.
 
 I can't yet give this process, but I can give some questions that can help exercise those underlying skills.
 
@@ -348,12 +364,11 @@ I can't yet give this process, but I can give some questions that can help exerc
 	* Can I make an abstract thing that simplifies my thinking?
 	* Can I make an abstraction that hides my decisions?
 
-Each of these questions requires more in-depth analysis, but we'll just skip that part for now. These questions may seem quite concrete, but they are not. For example "What happens if I comment out part of my code?" doesn't say how to find which part should I comment out neither does it say how can I come to the conclusion that I need to ask this question.
+Each of these questions requires more in-depth analysis, but I'll just skip that part. These questions may seem quite concrete, but they are not. For example "What happens if I comment out part of my code?" doesn't say how to find which part should I comment out neither does it say how can I come to the conclusion that I need to ask this question.
 
-Any programmer does these things automatically and effortlessly, without even thinking that he needs to do them. These are fundamental parts of any problem solving. 
+Any programmer asks these questions automatically and effortlessly, without even thinking that he needs to do them. These are fundamental parts of any problem solving. 
 
-First course of programming therefore must make students ask these questions all of the time until it becomes second nature. If we structure programming courses based on the language constructs then we may not teach them the skills. Programming course should be structured around the skills and then language constructs introduced as necessary. Any helping should be done through these questions, because these reinforce skills not knowledge. When teaching "knowledge" it's important to explain the need for that knowledge and how to come up with that knowledge and even how to have the idea that you would need such knowledge. (Knowledge meaning language constructs, paradigms, frameworks, code etc.)
-
+Programming tutorial/course must make students ask these questions all of the time until it becomes second nature. If we structure programming courses based on the language constructs then we may not teach them the skills. Programming course should be structured around the skills - and then language constructs introduced as necessary. Any helping should be done through these questions, because these reinforce skills not knowledge. When teaching "knowledge" it's important to explain the need for that knowledge and how to come up with that knowledge and even how to have the idea that you would need such knowledge (language constructs, paradigms, frameworks, code etc.) There must be big enough problems to solve otherwise it's not possible to learn sub-goaling.
 
 .. _HtDP: http://www.htdp.org/
 .. _SICP: http://mitpress.mit.edu/sicp/
