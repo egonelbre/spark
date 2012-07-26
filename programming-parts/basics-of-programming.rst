@@ -65,6 +65,8 @@ Imagine you are solving a sudoku and at stage 2, where you hit your first diffic
 
 In programming this means that when you cheat or take a shortcut the necessary skills won't be acquired. This could also include skills how to learn new skills and how to deal with friction. Any hint about solution will increase the knowledge, but it will not increase skills. Therefore any helping should be focused on which skills to apply or use, not what is the quickest way to the solution.
 
+	"You don't train for the olympics by driving a car."
+
 Programmers in real life have to deal with friction every day whether they like it or not. Friction makes you feel stupid and stressed. Although it may look that good programmers don't get that anymore, in reality, they have just learned to ignore those things.
 
 	"Keep trying even if you feel lost, it's just one part of problem solving."
@@ -366,7 +368,7 @@ I can't yet give this process, but I can give some questions that can help exerc
 
 Each of these questions requires more in-depth analysis, but I'll just skip that part. These questions may seem quite concrete, but they are not. For example "What happens if I comment out part of my code?" doesn't say how to find which part should I comment out neither does it say how can I come to the conclusion that I need to ask this question.
 
-Any programmer asks these questions automatically and effortlessly, without even thinking that he needs to do them. These are fundamental parts of any problem solving. 
+Any programmer asks these questions automatically and effortlessly, without even thinking that he needs to do them. Similar questions, but more general, was already been written by George Polya in "How to Solve It". Polya gives a good overview of general problem solving.
 
 Programming tutorial/course must make students ask these questions all of the time until it becomes second nature. If we structure programming courses based on the language constructs then we may not teach them the skills. Programming course should be structured around the skills - and then language constructs introduced as necessary. Any helping should be done through these questions, because these reinforce skills not knowledge. When teaching "knowledge" it's important to explain the need for that knowledge and how to come up with that knowledge and even how to have the idea that you would need such knowledge (language constructs, paradigms, frameworks, code etc.) There must be big enough problems to solve otherwise it's not possible to learn sub-goaling.
 
