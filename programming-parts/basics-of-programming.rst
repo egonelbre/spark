@@ -8,7 +8,7 @@ A model of problem solving
 
 Before we go into details we should have some intuition how different things affect the programmer.
 
-In the simplest form programmer solves a problem. There are some things that make reaching goal easier, some that make it harder. Programming can create quite extreme emotional states - therefore to understand the whole picture we must take it into account.
+In the simplest term programmer solves a problem. There are some things that make reaching goal easier, some that make it harder. Programming can create quite extreme emotional states - therefore to understand the whole picture we must take it into account.
 
 Here's my interpretation how these things work together:
 
@@ -368,7 +368,7 @@ I can't yet give this process, but I can give some questions that can help exerc
 
 Each of these questions requires more in-depth analysis, but I'll just skip that part. These questions may seem quite concrete, but they are not. For example "What happens if I comment out part of my code?" doesn't say how to find which part should I comment out neither does it say how can I come to the conclusion that I need to ask this question. Any programmer asks these questions automatically and effortlessly, without even thinking that he needs to do them.
 
-Similar questions, but more general, was already been written by G. Polya in "How to Solve It". There's also "How to Solve It by Computer" by R. G. Dromey that is more computer centric. SICP is full of specific questions and thought processes which makes it a must read for any programmer.
+Similar questions, but more general, was already been written by G. Polya in "How to Solve It". There's also "How to Solve It by Computer" by R. G. Dromey that is more computer centric. SICP and HtDP are full of specific questions and thought processes which makes them a must read for any programmer.
 
 Programming tutorial/course must make students ask these questions all of the time until it becomes second nature. If we structure learning based on the language constructs then we may not teach them the skills. Programming course should be structured around the skills - and the language constructs introduced as necessary. Any helping should be done through these questions, because they reinforce skills not knowledge. When teaching "knowledge" it's important to explain the need for that knowledge and how to come up with that knowledge and even how to have the idea that you would need such knowledge (language constructs, paradigms, frameworks, code etc.) There must be big enough problems to solve otherwise it's not possible to learn sub-goaling.
 

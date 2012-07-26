@@ -1,30 +1,86 @@
 Links for the curious
 =====================
 
+Books
+-----
 
-HtDP: http://www.htdp.org/
+SICP
+~~~~
 
-SICP: http://mitpress.mit.edu/sicp/
+http://mitpress.mit.edu/sicp/
 
+HtDP
+~~~~
+
+http://www.htdp.org/
+
+
+The Art of Readable Code, Code Complete 2, Clean Code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Architecture of Open Source Applications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+http://www.aosabook.org/en/index.html
+
+Game Programming Gems
+~~~~~~~~~~~~~~~~~~~~~
+
+http://www.gameprogramminggems.com/
+
+
+How to Solve It, How to Solve It by Computer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Articles
+--------
+
+Parnas
+
+McCarthy LISP
 
 https://dl.dropbox.com/u/14031931/Papers/VanRoyChapter.pdf
 
+What every programmer should know about memory
 
-http://objology.blogspot.com/2011/09/one-of-best-bits-of-programming-advice.html
+What every programmer should know about floating point numbers
+
+
+
+People
+------
+
+Alan Kay
+~~~~~~~~
+
+Rich Hickey
+~~~~~~~~~~~
+
+http://blip.tv/clojure/hammock-driven-development-4475586
+
+Carlo Pescio
+~~~~~~~~~~~~
+
 http://www.carlopescio.com/2011/04/your-coding-conventions-are-hurting-you.html
 http://www.carlopescio.com/2012/03/life-without-controller-case-1.html
 http://www.carlopescio.com/2012/03/episode-2-controller-strikes-back.html
 
-
-https://dl.dropbox.com/u/14031931/Papers/VanRoyChapter.pdf
-
-Screenwipe S05E03
-
-http://www.youtube.com/watch?v=GzZzOV9MF20
+Destroy All Software
+~~~~~~~~~~~~~~~~~~~~
 
 
-Alan Kay
 
+Code
+----
 
-Rich Hickey
-http://blip.tv/clojure/hammock-driven-development-4475586
+LISP
+~~~~
+
+Ometa
+~~~~~
+
+Nile/Gezira
+~~~~~~~~~~~
+
