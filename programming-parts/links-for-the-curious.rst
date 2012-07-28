@@ -41,12 +41,6 @@ Parnas
 
 McCarthy LISP
 
-https://dl.dropbox.com/u/14031931/Papers/VanRoyChapter.pdf
-
-What every programmer should know about memory
-
-What every programmer should know about floating point numbers
-
 
 
 People
@@ -84,3 +78,9 @@ Ometa
 Nile/Gezira
 ~~~~~~~~~~~
 
+
+Clojure
+~~~~~~~
+
+
+Studies In Words?
