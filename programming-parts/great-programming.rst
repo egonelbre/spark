@@ -18,6 +18,6 @@ The way we get to great programming is by asking questions, questioning our assu
 
 In this sense, projects, such as Viewpoint Research Institutes STEPS project that tries to implement personal computing experience under 20,000LOC, will give us valuable insight and new techniques to work with. Even if people won't start using it, it would be still an impressive feat of programming, engineering, mathematics and art.
 
-It's wise to listen to smarter people than yourself. The people I listen to are Alan Kay, Rich Hickey, Gerald Jay Sussman and Carlo Pescio. Mainly because they make me question my own assumptions/techniques. They don't just talk about the implementation, but they talk about things on a philosophical level.
+It's wise to listen to smarter people than yourself. The people I listen to are Alan Kay, Rich Hickey, Ian Piumarta, Gerald Jay Sussman and Carlo Pescio. Mainly because they make me question my own assumptions/techniques. They don't just talk about the implementation, but they talk about things on a philosophical level.
 
 Maybe someday I can write more about this topic, for now I don't consider myself smart enough.

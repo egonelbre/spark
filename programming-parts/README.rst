@@ -17,4 +17,4 @@ The second part "Better Programming" is a more thorough investigation on program
 
 The third part "Great Programming" is about ideas that can push programming to the next level.
 
-The fourth part "Links for the Curious" is a collection of links to articles, books, videos, code, tutorials and other things related to programming. It has also some discussion why those are great.
+The fourth part "Links for the Curious" is a collection of links to articles, books, videos, code, tutorials and other things related to programming. It has also some discussion why I have chosen them.
