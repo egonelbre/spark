@@ -34,14 +34,17 @@ Here we'll use these definitions:
 
 So making things simpler means untangling things. Making things easy means lowering the friction. Simple, complex are objective and easy, hard are subjective.
 
-..
-..
-..
+.. TODO: write longer explanation
+
+
 
 Reading and writing
 -------------------
 
+
+
 	Writing code in different ways
+
 
 Code
 ~~~~
@@ -51,17 +54,20 @@ Code
 	Nile
 	comments
 
+
 Comments
 ~~~~~~~~
 
-Style
-~~~~~
 
 Aesthetics
 ~~~~~~~~~~
 
-Syntax
-~~~~~~
+
+Style
+~~~~~
+
+
+
 
 Managing complexity
 -------------------
@@ -85,6 +91,7 @@ Immutability
 
 Context
 ~~~~~~~
+
 
 
 
@@ -155,6 +162,8 @@ Simple
 	Complect, Compose = make visible complecting
 
 
+
+
 Algorithms
 ----------
 
@@ -166,8 +175,13 @@ Algorithms
 
 
 
+
+
 Concurrency
 -----------
+
+
+
 
 
 Paradigm, language, framework, architecture
@@ -182,6 +196,8 @@ https://dl.dropbox.com/u/14031931/Papers/VanRoyChapter.pdf
 	Ometa
 
 "Remove friction from programming."
+
+
 
 
 To the metal
