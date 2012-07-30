@@ -256,7 +256,7 @@ Making goal more approachable can also be done by studying similar problems. If 
 Limits
 ------
 
-As humans we have several limitations in our processing power. We can hold in our heads at most 7+-2 things at once (not an exact number). We can't remember everything. We are incredibly fast. So, if we just keep adding things to and modifying code we will reach this limit quite quickly. If the code isn't in our capabilities there is a large risk of introducing bugs.
+As humans we have several limitations in our processing power. We can hold in our heads at most 7+-2 things at once (not an exact number). We can't remember everything and we aren't infinitely fast. So, if we just keep adding things to and modifying code we will reach this limit quite quickly. If the code isn't in our capabilities there is a large risk of introducing bugs.
 
 First limititation is typing speed. The solution to this is reducing the repetetive code. In it's simplest form, if we have three places where we use similar code/structure, we can group it and replace it with functions. In a more complex way, we can implement a domain specific language to do the grunt work and leave us writing about the important things. These two skills are lazyness and recognizing repetition. This also removes friction from the coding process, since we don't have to repeat ourselves.
 
@@ -305,8 +305,7 @@ When trying to make good abstractions it's important to know several ways of doi
 It's also important to realize that abstraction is not the end goal in itself. By over-abstracting we can start to increase the complexity again. Code and model (abstraction) should be in balance. In the same we can have too much code, we can have too many abstract ideas.
 
 Finally, when making things simpler it's also necessary to have a good understanding what "simple" and "complex", "easy" and "hard", "complecting" and "composing" mean. An excellent overview of those words was given by Rich Hickey in "Simple Made Easy".
-
-When we do not understand what simple exactly means we don't know what is our goal.
+When we do not understand what simple exactly means we won't understand what our goal is.
 
 	Making complexity is easy.
 	Using complexity is hard.
