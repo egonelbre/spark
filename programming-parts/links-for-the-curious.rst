@@ -42,7 +42,6 @@ Parnas
 McCarthy LISP
 
 
-
 People
 ------
 
@@ -60,6 +59,9 @@ Carlo Pescio
 http://www.carlopescio.com/2011/04/your-coding-conventions-are-hurting-you.html
 http://www.carlopescio.com/2012/03/life-without-controller-case-1.html
 http://www.carlopescio.com/2012/03/episode-2-controller-strikes-back.html
+
+Ian Piumarta
+~~~~~~~~~~~~
 
 Destroy All Software
 ~~~~~~~~~~~~~~~~~~~~

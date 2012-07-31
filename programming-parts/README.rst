@@ -15,6 +15,6 @@ The first part "Basics of Programming" starts with introducing a model for under
 
 The second part "Better Programming" is a more thorough investigation on programming topics. It's about things that make some programmers better than others. It's about things that help you to learn to be a better programmer. It's about discussing things that programmers have to deal with every day.
 
-The third part "Great Programming" is about ideas that can push programming to the next level.
+The third part "Great Programming" is not finished.
 
 The fourth part "Links for the Curious" is a collection of links to articles, books, videos, code, tutorials and other things related to programming. It has also some discussion why I have chosen them.
