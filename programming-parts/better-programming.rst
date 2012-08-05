@@ -38,13 +38,26 @@ So making things simpler means untangling things. Making things easy means lower
 
 
 
-Reading and writing
+Writing
+-------
+
+Prototyping
+~~~~~~~~~~~
+
+Difference
+~~~~~~~~~~
+
+Comments
+~~~~~~~~
+
+Style
+~~~~~
+http://www.artima.com/weblogs/viewpost.jsp?thread=74230
+
+
+
+Reading 
 -------------------
-
-
-
-	Writing code in different ways
-
 
 Code
 ~~~~
@@ -54,18 +67,8 @@ Code
 	Nile
 	comments
 
-
-Comments
-~~~~~~~~
-
-
 Aesthetics
 ~~~~~~~~~~
-
-
-Style
-~~~~~
-
 
 
 
@@ -76,11 +79,12 @@ Managing complexity
 		measuring aircraft building progress by weight.
 	— William Gates
 
+Patterns
+~~~~~~~~
 
 	Invariants
 	Design Patterns
 	Architectural Patterns
-
 
 Immutability
 ~~~~~~~~~~~~
@@ -102,11 +106,14 @@ Abstract things
 	OOP
 	State is Never Simple : Rich Hickey
 
+
 Making of
 ~~~~~~~~~
 
+
 Knowing
 ~~~~~~~
+
 
 Intuition about
 ~~~~~~~~~~~~~~~
@@ -120,8 +127,9 @@ Meta
 
 
 
-Making things ...
------------------
+Making things
+-------------
+
 
 Useful
 ~~~~~~
@@ -142,10 +150,18 @@ Reliable
 	Writing good tests
 	Asserting
 
+
+	http://www.carlopescio.com/2011/06/cut-red-wire.html
+
+	Crashing against the railings with car
+
 Fast
 ~~~~
 
-	"Measure before optimization."
+	"Measure before optimisation."
+
+Premature Optimisation
+Premature Pessimisation
 
 Simple
 ~~~~~~
@@ -162,8 +178,6 @@ Simple
 	Complect, Compose = make visible complecting
 
 
-
-
 Algorithms
 ----------
 
@@ -174,30 +188,43 @@ Algorithms
 	Algorithm Design Manual - "War Stories"
 
 
+Concurrency and Parallelism
+---------------------------
 
+Concurrency is not Parallelism - by Pike
 
+Knowledge
+---------
 
-Concurrency
------------
+	I tend to liken paradigms, languages, and the structures we build with those languages to materials, with a set of expected properties (hence my work on the physics of software). If you build something using steel, you expect some properties. If you use wood, you expect different properties. It's not that steel "is wrong" or wood "is wrong". They're wrong if you expect a different set of properties. And of course, trying to shape wood the way you do with steel ain't gonna work, and you may end up with a burned piece of wood. Fake OO is like claiming, at that point, that burned wood is steel. Except it's not.
 
+	In this sense, I see most criticism of programming paradigms as rather myopic. You frequently see a dangerously good :-) speaker / writer saying the equivalent of "see, stainless steel cannot be shaped into foil thinner than 0.01mm, so we never should use metals at all", which is very much like finding a case that cannot be perfectly covered by one language, and then claiming that the entire paradigm is a failure, and of course they propose a different paradigm ("you should always use graphene instead!"). They argue so convincingly that you really want to believe them.
 
+"Remove friction from programming."
 
-
-
-Paradigm, language, framework, architecture
--------------------------------------------
+Paradigm
+~~~~~~~~
 
 https://dl.dropbox.com/u/14031931/Papers/VanRoyChapter.pdf
 
 	Declarative / Imparative
+
+Language
+~~~~~~~~
+
 	Haskell
 	Prolog
 	ASP
 	Ometa
 
-"Remove friction from programming."
+Growing a Language
+	http://www.youtube.com/watch?v=_ahvzDzKdB0
 
+Framework
+~~~~~~~~~
 
+Architecture
+~~~~~~~~~~~~
 
 
 To the metal

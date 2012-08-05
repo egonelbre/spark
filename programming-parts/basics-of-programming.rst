@@ -12,7 +12,7 @@ In the simplest term programmer solves a problem. There are some things that mak
 
 Here's my interpretation how these things work together:
 
-.. image:: graphics/model.png
+.. image:: http://github.com/egonelbre/spark/raw/master/programming-parts/graphics/model.png
 
 I also gave those forces some descriptive names:
 
@@ -59,7 +59,7 @@ When people are not ready to deal with friction they either give up, cheat or ge
 
 Let's try to imagine what happens if a person "cheats" when learning.
 
-.. image:: graphics/model-shortcut.png
+.. image:: http://github.com/egonelbre/spark/raw/master/programming-parts/graphics/model-shortcut.png
 
 Imagine you are solving a sudoku and at stage 2, where you hit your first difficult problem, someone else comes and solves the sudoku for you. This would mean that you won't feel the "high" and are less likely to try solving a sudoku again. The perceived reward has also decreased. More importantly what happens is that you fail to learn skills required to overcome obstacles 2 and 3.
 
