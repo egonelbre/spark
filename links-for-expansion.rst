@@ -1,5 +1,5 @@
-Links for the curious
-=====================
+Links for expansion
+===================
 
 Books
 -----
