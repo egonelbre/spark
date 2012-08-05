@@ -36,5 +36,6 @@ I'm open to any kind of feedback, especially I'm hoping for these things:
 * missed questions - additions to the summary in "basics of programming"
 * missed topics - topics that should be covered in "better programming"
 * links - that should be added to part four or five
+* code - excellent code examples that should be added
 
 The things that you think should be added should be language non-specific or apply to more than one language.
