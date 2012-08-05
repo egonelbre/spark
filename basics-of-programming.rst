@@ -264,7 +264,7 @@ Next limitation is reading speed and our memory. If our whole code base is above
 
 Finally the most important limitation is our brain processing power. If we need to simulate and understand how 10 things interact with each other, we won't able to think about simultanously. Since most of the time there are hundreds or more things interacting, knowing how to reason about them is the most important skill of any good developer.
 
-This skill can be called "handling complexity", although there are several sides to it. So what are the ways to handle complexity?
+This skill can be called "handling complexity", although there are several sides to it. This skill is the most difficult to learn as a programmer, since the essence of it is about dealing with things that you are not capable of understanding entierly. So what are the basic ways to handle complexity?
 
 The first is by training your processing capabilities and memory. This can be done by studying systems and trying to understand them. There's a big problem with this, it doesn't scale. We may now be able to think about 10 things but when we need to modify or add to it our brain will still make mistakes.
 
