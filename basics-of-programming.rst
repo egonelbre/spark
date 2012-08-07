@@ -71,7 +71,7 @@ Programmers in real life have to deal with friction every day whether they like 
 
 	"Keep trying even if you feel lost, it's just one part of problem solving."
 
-In programming the skills are the much more important than knowledge, tools. Skills help us learn new skills and gain knowledge. For learning programming the most important question is "What is the most effective set of skills and knowledge that helps overcome friction and can produce any other skill and knowledge required?" This Doesn't necessarily mean the minimal set, since "learn a new thing" wouldn't work that effectively.
+In programming "the skills" are much more important than knowledge and tools. Skills help us learn new skills and gain knowledge. For learning programming the most important question is "What is the most effective set of skills and knowledge that helps overcome friction and can produce any other skill and knowledge required?" This Doesn't necessarily mean the minimal set, since "learn a new thing" wouldn't work that effectively.
 
 HtDP_ ("How to Design Programs") puts all these ideas together quite nicely:
 
