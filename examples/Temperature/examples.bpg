@@ -1,0 +1,40 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = p1_ConverterFunctions.exe p2_ConverterClasses.exe \
+  p3_ConverterClass.exe p4_ConverterClassIndex.exe p5_ConverterClassFastIndex.exe \
+  p6_ConverterClassData.exe p7_ConverterClassDataClass.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+p6_ConverterClassData.exe: p6_ConverterClassData.dpr
+  $(DCC)
+
+p5_ConverterClassFastIndex.exe: p5_ConverterClassFastIndex.dpr
+  $(DCC)
+
+p4_ConverterClassIndex.exe: p4_ConverterClassIndex.dpr
+  $(DCC)
+
+p3_ConverterClass.exe: p3_ConverterClass.dpr
+  $(DCC)
+
+p2_ConverterClasses.exe: p2_ConverterClasses.dpr
+  $(DCC)
+
+p1_ConverterFunctions.exe: p1_ConverterFunctions.dpr
+  $(DCC)
+
+p7_ConverterClassDataClass.exe: p7_ConverterClassDataClass.dpr
+  $(DCC)
+
+
