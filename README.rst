@@ -16,13 +16,13 @@ This whole thing is written in 5 parts.
 
 The first part "Basics of Programming" starts with introducing a model for understanding how different things (such as skill, knowledge, language) affect the programmer. Then it goes over a lot of things where beginners get stuck. At the same time it gives an overview of essential parts of programming, things that every programmer does without realizing it.
 
-The second part "Better Programming" is a more thorough investigation on programming topics. It's about things that make some programmers better than others. It's about things that help you to learn to be a better programmer. It's about discussing things that programmers have to deal with every day.
+The second part "Better Programming" is a more thorough investigation on programming topics. It's about things that make some programmers better than others. It's about things that help you to learn to be a better programmer. It's about discussing things that programmers have to deal with every day. (WIP)
 
 The third part "Great Programming" is not finished.
 
-The fourth part "Links for expansion" is a collection of links to articles, books, videos, code, tutorials and other things that expand your understanding of programming.
+The fourth part "Links for expansion" is a collection of links to articles, books, videos, code, tutorials and other things that expand your understanding of programming. (WIP)
 
-The fifth part "Links for knowledge" is a collection of links to things that expand your knowledge about programming. These are the links that didn't fit into part four.
+The fifth part "Links for knowledge" is a collection of links to things that expand your knowledge about programming. These are the links that didn't fit into part four. (WIP)
 
 Code
 ====
