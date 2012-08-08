@@ -358,7 +358,7 @@ I can't yet give this process, but I can give some questions that can help exerc
   - Can I make an abstract thing that simplifies my thinking?
   - Can I make an abstraction that hides my decisions?
 
-These questions may seem quite concrete, but they are not. For example "What happens if I comment out part of my code?" doesn't say how to find which part should I comment out neither does it say how can I come to the conclusion that I need to ask this question. Each of these questions requires more in-depth analysis, but I'll just skip that part. Any programmer asks these questions automatically and effortlessly, without thinking that he needs to do them.
+These questions may seem quite concrete, but they are not. For example "What happens if I comment out part of my code?" doesn't say how to find which part should I comment out neither does it say how can I come to the conclusion that I need to ask this question. Each of these questions requires in-depth analysis, but I'll just skip that part. Every programmer asks these questions automatically and effortlessly, without thinking that he needs to do them.
 
 Similar questions, but more general, have already been written by G. Polya in "How to Solve It". The only book that introduces all of these things is SICP_. It is a masterpiece for learning programming as it goes through the mental process of a programmer, not just the technical implementation. It is therefore a must read for any programmer.
 
