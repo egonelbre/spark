@@ -122,19 +122,19 @@ Programmers need this capability of understanding their assumptions and misconce
 Making things concrete
 ----------------------
 
-One thing that is most visible thing about programming is writing programs. Since computers are very, very stupid we need to get from some vague idea to the actual implementation. We need to explain every single detail until there is no thought required to follow the instrutions.
+The most visible thing about programming is writing programs. Since computers are very, very stupid we need to get from our vague idea to the actual implementation. We need to explain every single detail until there is no thought required to follow the instructions.
 
-Let's consider a "box moving from left to right". How to turn this into code? One easy way is to recursively specify each single part in some convenient pseudocode until it resembles the language you are writing in, and finally make it compilable.
+Let's consider code for "box moving from left to right". How to turn this into code? One easy way is to specify each single part in some convenient pseudocode until it resembles the language you are writing in.
 
 We start by specifiying::
 
 	// box moving from left to right and back
 
-Here we should ask questions like, what is "box", "moving", "left", "right", "back". What do we mean by "box is moving".
+Here we should be asking questions, what is "box", "moving", "left", "right", "back". What do we mean by "box is moving".
 
-By moving box we mean we can see the "box" change it's position. Now the question is, when does it change. Let's just take some convenient moment, for example when the screen get's redrawn.
+By "box is moving" we mean that we can see the "box" change it's position. Now the question is, when does it change. Let's just take some convenient moment, for example when the screen get's redrawn.
 
-What do we mean by change it's position? It's just change in the "x" coordinate. How much do we need to change? Let's worry about that exact detail later. So moving would look like::
+What do we mean by "change its position"? It is just a change in the "x" coordinate. How much do we need to change? Let's worry about that exact detail later. So moving would look like::
 
 	// when update {
 	// 		box.x = box.x + 10
@@ -162,7 +162,7 @@ What do we mean by "reach"? This means that when "box.x > right". What do we mea
 	// 		speed = -10
 	// }
 
-Converting this into actual code is mostly reasearch how a language exactly works, but here's one possible interpretation::
+Converting this into actual code is mostly research how a language exactly works, but here's one possible interpretation::
 
 	var speed = 10,
 		left = 0,
@@ -180,19 +180,21 @@ Converting this into actual code is mostly reasearch how a language exactly work
 
 As we can see we didn't start from writing in the programming language from the start. It may look like many programmers start from writing in a programming language - in reality they just do the first parts in their head and translate the result into code.
 
-There are of course other ways of explaining things to the computer, but for beginners this is enough. The whole process is quite easy if the programming language is taken out.
+There are other ways of explaining things to the computer, but for beginners this is enough. The whole process is quite easy if the programming language is taken out.
 
 
 Programs do what they do
 ------------------------
 
-When we would run the previous code we would discover that it didn't work the way it supposed to. The box moves first to right and then back and then off the screen. That is a bug.
+If we run the previous code we will discover that it didn't work the way it supposed to. The box moves to right and then back and then off the screen. That is a bug.
 
 We need to understand what the program actually does, since the model in our head and the thing program does do not match up. One common mistake is to immeditely start to change the code without actually understanding the code. This understanding is important as this is the only way we can build intution about how code behaves. When we have intution and understanding about the system we can make reasoned fixes.
 
-Correct way would be to analyse the code - maybe try changing some parameters and try to predict what happens and finally test whether it happens. If there are lot's of "moving parts" then try to reduce the system to the bare minimum where the problem occurs. Or do something to make the problem occur faster.
+	"The only thing, that shows what a program does, is what it actually does."
 
-In the previous code we finally find that when the box reaches the left side it doesn't turn around again. If we now remember our initial vague idea "box moving from left to right and back", we see that we did not specify that it should start moving right again. This means that the bugs aren't always in the code it may be also in our head. Maybe we didn't anticipate some corner cases, maybe we didn't specify the behaviour explicitly enough. In this case the solution is simple, just add this extra condition::
+Correct way would be to analyse the code - maybe try changing some parameters and try to predict what happens and finally test whether it happens. If there are lots of "moving parts" then try to reduce the system to the bare minimum where the problem occurs. This can be done by commenting out irrelevant code or making an other simpler program.
+
+After studying the code we finally notice that when the box reaches the left side it doesn't turn around again. If we now consider our initial vague idea "box moving from left to right and back", we see that we did not specify that it should start moving right again. Here is another important insight bugs aren't always in the code they can be in the specification and in our head. Maybe we didn't anticipate some corner cases, maybe we didn't specify the behaviour explicitly enough. In this case the solution is simple, just add this extra condition::
 
 	var speed = 10,
 		left = 0,
@@ -213,10 +215,6 @@ In the previous code we finally find that when the box reaches the left side it 
 
 Understanding the system and how it behaves and having an intuition is important, otherwise we will be making changes without being able to predict the consequences.
 
-	"The only thing, that shows what a program does, is what it actually does."
-
-
-
 Reaching the goal
 -----------------
 
@@ -224,21 +222,21 @@ One misconception about great problem solvers is that they know the solution to 
 
 	I had this overview of algorithms as some ideas that someone just came up with. The whole process would look like: idea -> analysis -> article. I actually didn't even think about this assumption deeply. After I read "The Algorithm Design Manual", especially the "War Story" parts, I realized that my assumptions were wrong.
 
-	The "War Story" parts were descriptions of deriving algorithms and putting ideas together and discussion between people, failures and testing. Essentially they were descriptions how algorithms are modified, designed and put together. The process to designing algorithms was made visible.
+	The "War Story" parts were descriptions of deriving algorithms and putting ideas together and discussions between people, failures and testing. Essentially they were descriptions how algorithms are modified, designed and put together. The process of designing algorithms was made visible.
 
-	After that I had less fear of trying to come up with algorithms or design things, because I understood that I do not have to solve the whole problem at once. This is a trivial point, but has deeper meaning in the process.
+	After that I had less fear of trying to come up with algorithms or design things, because I understood that I do not have to solve the whole problem at once. And failure is always an option. This is a trivial point, but has deeper meaning in the process.
 
-If we would consider a student trying to implement an operating system, it would seem unimaginable or we will be accused of overestimating the skills of the student. Once we accept that it's not necessary to know the full solution immediately, the problem becomes achievable.
+If we consider a beginner programmer trying to implement an operating system, it would seem unimaginable or it is overestimating the skills of the beginner. Once we accept that it's not necessary to know the full solution immediately, the problem becomes easier.
 
 In the simplest terms, what does the OS do? Well it makes multiple programs work together, it talks to the "metal", it provides some services to the programs. Each of those is a much simpler idea than implementing an OS, but if we understand each of those parts we probably have better knowledge and skills to deal with the actual problem. If we have trouble solving each of those problems we can recursively divide those problems until each part is easily solvable.
 
-This process may take time, but the important thing is that it removes the fear of trying to solve hard problems, it makes them reachable, it makes them simpler. If you start with big problems it's easier to learn this "sub-goaling".
+This process may take time, but it removes the fear of trying to solve hard problems, it makes them reachable, it makes them simpler. So when learning programming try to solve very big problems as well, otherwise it's harder to learn this "sub-goaling".
 
 What are the other ways we can make our goals more attainable?
 
-One version of this subdivision for programming is "wishful thinking" as described in SICP_ (Structure and Interpretation of Computer Programs). The idea is simple - you imagine that you can have anything in the world at your fingertips and you will write your code as such. Then you proceed to make some of the parts of the imagined world in the same way until you have nothing imagined and everything is concrete. (link to thorough explanation)
+One version of this "sub-goaling" for programming is "wishful thinking" as described in SICP_ (Structure and Interpretation of Computer Programs). The idea is simple - you imagine that you can have anything in the world at your fingertips and you will write your code as such. Then you proceed to make some of the parts of the imagined world in the same way until you have nothing imagined and everything is concrete. (link to thorough explanation)
 
-Making goal more approachable can also be done by studying similar problems. If we wish to move something on the screen, we may want to study how a car moves. If we wish to write a game we should study how other games have been implemented.
+Making goal more approachable can also be done by studying similar problems. If we wish to move something on the screen, we could study how a car moves. If we wish to write a game could study how other games are implemented.
 
 	Great programs, algorithms, solutions, ideas don't just spring into life by a magical wish, they start as a seed and are slowly grown until one day a blossom appears. Seeing a master produce a flower from his hands in a blink of an eye, is not because he wished for it, but because he has a Sgarden he cares for.
 
