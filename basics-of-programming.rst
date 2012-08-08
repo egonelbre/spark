@@ -323,28 +323,33 @@ Unfortunately it doesn't give such precise and short overview of the "systematic
 I can't yet give this process, but I can give some questions that can help exercise those underlying skills.
 
 * Concreteness or how do I make the computer do what I want?
+
   - How would I state the general concept?
   - What does that word exactly mean?
   - What tools can I use to implement that concept?
 
 * Misconceptions or what parts do I misunderstand?
+
   - Why does this problem happen?
   - Why didn't my change make things better?
   - Why my change produced this result?
 
 * Understanding or how can I understand things?
+
   - What happens if I comment out part of my code?
   - What happens if I tweak some parameter?
   - What happens if I do something to the code?
   - Is there some knowledge that can help me?
 
 * Sub-goaling or how can I make my goal more achievable?
+
   - Can I understand just part of the problem?
   - Can I implement just part of the problem?
   - Can I understand something similar to my problem?
   - What could I have, that would make this problem much simpler?
 
 * Complexity or how can I make things simpler?
+
   - Can I write it more nicely?
   - Can I find a different way how to write this?
   - Can I find a thing that makes other things simpler?
