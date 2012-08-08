@@ -358,11 +358,13 @@ I can't yet give this process, but I can give some questions that can help exerc
   - Can I make an abstract thing that simplifies my thinking?
   - Can I make an abstraction that hides my decisions?
 
-Each of these questions requires more in-depth analysis, but I'll just skip that part. These questions may seem quite concrete, but they are not. For example "What happens if I comment out part of my code?" doesn't say how to find which part should I comment out neither does it say how can I come to the conclusion that I need to ask this question. Any programmer asks these questions automatically and effortlessly, without even thinking that he needs to do them.
+These questions may seem quite concrete, but they are not. For example "What happens if I comment out part of my code?" doesn't say how to find which part should I comment out neither does it say how can I come to the conclusion that I need to ask this question. Each of these questions requires more in-depth analysis, but I'll just skip that part. Any programmer asks these questions automatically and effortlessly, without thinking that he needs to do them.
 
-Similar questions, but more general, was already been written by G. Polya in "How to Solve It". The only book that introduces all of these things is SICP_. It is a masterpiece for learning programming as it goes through the mental process of a programmer, not just the technical implementation. It is therefore a must read for any programmer.
+Similar questions, but more general, have already been written by G. Polya in "How to Solve It". The only book that introduces all of these things is SICP_. It is a masterpiece for learning programming as it goes through the mental process of a programmer, not just the technical implementation. It is therefore a must read for any programmer.
 
-Programming tutorial/course must make students ask these questions all of the time until it becomes second nature. If we structure learning based on the language constructs then we may not teach them the skills. Programming course should be structured around the skills - and the language constructs introduced as necessary. Any helping should be done through these questions, because they reinforce skills not knowledge. When teaching "knowledge" it's important to explain the need for that knowledge and how to come up with that knowledge and even how to have the idea that you would need such knowledge (language constructs, paradigms, frameworks, code etc.) There must be big enough problems to solve otherwise it's not possible to learn sub-goaling.
+Programming tutorial/course must make students ask these questions all of the time until it becomes second nature. If we structure learning based on the language constructs then we may not teach them skills. Programming course should be structured around skills - and the language constructs introduced as necessary. Any helping should be done through these questions, because they reinforce skills not knowledge. When teaching "knowledge" we need to explain the need for that knowledge and how to come up with that knowledge and even how to have the idea that you would need such knowledge[1]_.
+
+.. [1] Knowledge meaning language constructs, paradigms, frameworks, code style.
 
 .. _HtDP: http://www.htdp.org/
 .. _SICP: http://mitpress.mit.edu/sicp/
