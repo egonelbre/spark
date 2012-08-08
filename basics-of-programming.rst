@@ -318,47 +318,40 @@ HtDP_ gives a nice summary about programming:
 
 	"Programming is far more than the mechanics of language acquisition. It is about reading problem statements, extracting the important concepts. It is about figuring out what is really wanted. It is about exploring examples to strengthen your intuitive understanding of the problem. It is about organizing knowledge and it is about knowing what you don’t know yet. It is about filling those last few gaps. It is about making sure that you know how and why your code works, and that you and your readers will do so in the future. In short, it is really about solving problems systematically."
 
-Unfortunately it doesn't give such precise and short overview of the "systematic process" that helps you do all of that.
-
-If we wish to teach/learn programming effectively we must understand this "systematic process" throughly, not just hope that people somehow manage to derive this process themselves. We must understand the fundamental skills and knowledge.
+Unfortunately it doesn't give such precise and short overview of the "systematic process" that helps you do all of that. If we wish to teach/learn programming effectively we must understand this "systematic process" throughly, not just hope that people somehow manage to derive this process themselves. We must understand the fundamental skills and knowledge.
 
 I can't yet give this process, but I can give some questions that can help exercise those underlying skills.
 
 * Concreteness or how do I make the computer do what I want?
-	
-	* How would I state the general concept?
-	* What does that word exactly mean?
-	* What tools can I use to implement that concept?
+  - How would I state the general concept?
+  - What does that word exactly mean?
+  - What tools can I use to implement that concept?
 
 * Misconceptions or what parts do I misunderstand?
-
-	* Why does this problem happen?
-	* Why didn't my change make things better?
-	* Why my change produced this result?
+  - Why does this problem happen?
+  - Why didn't my change make things better?
+  - Why my change produced this result?
 
 * Understanding or how can I understand things?
-
-	* What happens if I comment out part of my code?
-	* What happens if I tweak some parameter?
-	* What happens if I do something to the code?
-	* Is there some knowledge that can help me?
+  - What happens if I comment out part of my code?
+  - What happens if I tweak some parameter?
+  - What happens if I do something to the code?
+  - Is there some knowledge that can help me?
 
 * Sub-goaling or how can I make my goal more achievable?
-	
-	* Can I understand just part of the problem?
-	* Can I implement just part of the problem?
-	* Can I understand something similar to my problem?
-	* What could I have, that would make this problem much simpler?
+  - Can I understand just part of the problem?
+  - Can I implement just part of the problem?
+  - Can I understand something similar to my problem?
+  - What could I have, that would make this problem much simpler?
 
 * Complexity or how can I make things simpler?
-	
-	* Can I write it more nicely?
-	* Can I find a different way how to write this?
-	* Can I find a thing that makes other things simpler?
-	* Can I find similar things and group them?
-	* Can I find things that do not affect each and group them?
-	* Can I make an abstract thing that simplifies my thinking?
-	* Can I make an abstraction that hides my decisions?
+  - Can I write it more nicely?
+  - Can I find a different way how to write this?
+  - Can I find a thing that makes other things simpler?
+  - Can I find similar things and group them?
+  - Can I find things that do not affect each and group them?
+  - Can I make an abstract thing that simplifies my thinking?
+  - Can I make an abstraction that hides my decisions?
 
 Each of these questions requires more in-depth analysis, but I'll just skip that part. These questions may seem quite concrete, but they are not. For example "What happens if I comment out part of my code?" doesn't say how to find which part should I comment out neither does it say how can I come to the conclusion that I need to ask this question. Any programmer asks these questions automatically and effortlessly, without even thinking that he needs to do them.
 
