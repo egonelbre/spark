@@ -1,77 +1,69 @@
 Basics of programming
 =====================
 
-The first part introduces a model for understanding how different things (such as skill, knowledge, language) affect the programmer. It also tries to figure out what makes a programmer a programmer.
+We first introduce a model for understanding how skill, knowledge and language affect the programmer. Then we try to figure out what makes a programmer a programmer.
 
 A model of problem solving
 --------------------------
 
-Before we go into details we should have some intuition how different things affect the programmer.
+In the simplest terms programmer is a problem solver. There are some things that make reaching solution easier, some that make it harder. Programming can also create quite extreme emotional states - therefore to understand the whole picture we must take it into account.
 
-In the simplest term programmer solves a problem. There are some things that make reaching goal easier, some that make it harder. Programming can create quite extreme emotional states - therefore to understand the whole picture we must take it into account.
-
-Here's my interpretation how these things work together:
+Here's how these things work together:
 
 .. image:: http://github.com/egonelbre/spark/raw/master/graphics/model.png
 
-I also gave those forces some descriptive names:
+Let's call the things that affect programmer forces and give them some names:
 
 * movement: things that make you move towards your goal
 * friction: things that make your movement harder and hinder you from reaching your goal
 * uppers: things that make you feel good
 * downers: things that make you feel bad
 
-When looking the "mood" axis, remember it's more of an abstract scale.
+Keep in mind that the "mood" axis is an abstract concept.
 
-Since it's much easier to explain the model with sudoku, will start with that. Time frame for it is much shorter and most people are already familiar with it.
+It's much easier to explain the model with sudoku, since more people are familiar with it. Also the time frame where you experience all of these steps are much shorter.
 
-At the starting point we are eager to solve problem
+When we start solving the sudoku we have some eagerness
 
-1. stage, we realize the actual difficulty of the problem and become focused. We also start to fill in the easier parts of the sudoku.
-2. stage, we have a difficult stage, where we need to have more effort to move forward. Once we break this difficult stage, we get this small high of solving a small problem.
-3. stage, we realize that we know how to solve the puzzle and go through with solving it
-4. stage, we completed it, finally we have this "high" of reaching a goal.
+1. stage, we realize the actual difficulty of the problem and become focused. We also start filling the easier parts.
+2. stage, we have some difficult step, where we need to have more effort to move forward. Once we break this difficult stage, we get this small high of solving a small problem.
+3. stage, we realize that we know how to solve the puzzle and quickly fill in the missing parts.
+4. stage, we finsihed it, finally we have this "high" from reaching the goal and feeling smart.
 
-Here we can see what produces the addictiveness of sudokus. This low mood, struggle and finally the high. This is the same reason why programmers lose track of time when programming. The addictivness can also be explained by flow, as described by Mihaly Csikszentmihalyi.
+This same emotional fluctuation and final high is what causes the addicitiveness of sudokus. This is also the reason why programmers can easily get into this state flow and lose track of time. (Flow as described by Mihaly Csikszentmihalyi.)
 
-So, what are these forces composed of?
+Let's see how to decompose the forces into simpler things:
 
 * uppers = progress + solving subgoals + acquiring new skills + understanding + serendipity
 * downers = no progress + failures + perceived difficulty + feeling stupid + pressure
 * friction = difficulty + bad tools + bad mood
 * movement = perceived reward * ( skills + knowledge + good tools + good mood )
 
-In sudoku difficulty is how easy is to derive the next number. When using bad tools such as pen or no writing at all the required skill level must be higher. If we have a pencil we can do much more easily guesses and tries.
+In sudoku difficulty means how easy it is to derive the next number. If we use a bad tool such as pen or nothing at all the required skill level must be higher. If we have a pencil we can do try out different things and erase them as neccessary. Skills are things that help us derive new numbers and knowledge is how a number looks like.
 
-Perceived reward is the thing that makes us want to apply the things we know and struggle against friction more, hence it affects all other parts of movement. This suggests that learning theory without a goal requires more effort than trying to solve a problem while learning theory as a solution. This means learning must start from a problem, not from theory.
+Perceived reward makes us want to apply our knowledge and struggle against friction more, hence it affects all other parts of movement. This suggests that learning theory without a goal requires more effort than trying to solve a problem while learning theory as a solution. This means learning must start from a problem, not from theory.
 
-Skills are the things that help us derive new numbers. Knowledge is how a number looks like and what is a goal.
+We can see that by learning we can affect knowledge, tools and skills. This also means that learning must affect all of them.
 
-Here we can see that the thing we can learn are knowledge, tools and skills. This suggests that any learning must affect all three areas.
+If we consider programming the force decomposition stays the same. One area that is often discussed when starting to learn programming is what language, framework, toolchain to use. The force that these things affect is friction - and to some smaller degree required knowledge.
 
-If we now go back to programming, the main components stay the same.
+So the question is actually how much friction is neccessary for learning. If we lower friction we are also lowering the skill required to accomplish a task - which may not be the best solution for learning. Programmers must be able deal with the friction - how to keep going towards goal, even if everything is working against you. So there is a necessity for skills that deal with friction.
 
-Let's consider how to categorize language, frameworks, toolchains. Mainly they are just knowledge and tools. This means that picking the right tools only affects friction, not necessarily the skills. Any debate about which language to use for learning is about how much friction can people handle.
-
-By lowering friction we are also lowering the skill required to accomplish the task - which may not be the best solution for learning. You must be able deal with the friction - how to keep going towards goal, even if you everything is working against you.
-
-When people are not ready to deal with friction they either give up, cheat or get help. But, if they have necessary skills they can still make progress.
-
-Let's try to imagine what happens if a person "cheats" when learning.
-
-.. image:: http://github.com/egonelbre/spark/raw/master/graphics/model-shortcut.png
-
-Imagine you are solving a sudoku and at stage 2, where you hit your first difficult problem, someone else comes and solves the sudoku for you. This would mean that you won't feel the "high" and are less likely to try solving a sudoku again. The perceived reward has also decreased. More importantly what happens is that you fail to learn skills required to overcome obstacles 2 and 3.
-
-In programming this means that when you cheat or take a shortcut the necessary skills won't be acquired. This could also include skills how to learn new skills and how to deal with friction. Any hint about solution will increase the knowledge, but it will not increase skills. Therefore any helping should be focused on which skills to apply or use, not what is the quickest way to the solution.
-
-	"You don't train for the olympics by driving a car."
-
-Programmers in real life have to deal with friction every day whether they like it or not. Friction makes you feel stupid and stressed. Although it may look that good programmers don't get that anymore, in reality, they have just learned to ignore those things.
+The problem with friction is that it makes people feel stressed and stupid - if some limit is crossed then people will cheat or get help. In everyday life this friction is very common. Although it may look that good programmers don't feel the stress and bad feelings it is more likely that they ignore it.
 
 	"Keep trying even if you feel lost, it's just one part of problem solving."
 
-In programming "the skills" are much more important than knowledge and tools. Skills help us learn new skills and gain knowledge. For learning programming the most important question is "What is the most effective set of skills and knowledge that helps overcome friction and can produce any other skill and knowledge required?" This Doesn't necessarily mean the minimal set, since "learn a new thing" wouldn't work that effectively.
+Let us consider what happens if a person "cheats" while learning.
+
+.. image:: http://github.com/egonelbre/spark/raw/master/graphics/model-shortcut.png
+
+Imagine you are solving a sudoku and at stage 2, where you hit your first difficult problem, someone else comes and solves the sudoku for you. This would mean that you won't feel the "high" and are less likely to try solving a sudoku again. The perceived reward has also decreased. More importantly you fail to learn skills required to overcome obstacles 2 and 3.
+
+The same applies to programming. This could also include skills how to learn new skills and how to deal with friction. Any hint about solution will increase the knowledge, but it will not increase skills. Therefore any helping should be focused on which skills to apply or use, not what is the quickest way to the solution.
+
+	"You don't train for the olympics by driving a car."
+
+In programming "the skills" are much more important than knowledge and tools. Skills help us learn new skills and gain knowledge. For "how to teach programming" the most important question is "What is the most effective set of skills and knowledge that helps overcome friction and can produce any other skill and knowledge required?" This Doesn't necessarily mean the minimal set, since "learn a new thing" wouldn't work that effectively.
 
 HtDP_ ("How to Design Programs") puts all these ideas together quite nicely:
 
@@ -80,7 +72,6 @@ HtDP_ ("How to Design Programs") puts all these ideas together quite nicely:
 So what are the programming skills that are the main drivers of movement. What is the most basic knowledge and skills that makes people programmers?
 
 	"The most important skill is how to acquire skills and knowledge effectively. Everything else can be acquired effectively."
-
 
 
 Meaning of things
