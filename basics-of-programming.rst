@@ -243,17 +243,17 @@ Making goal more approachable can also be done by studying similar problems. If 
 Limits
 ------
 
-As humans we have several limitations in our processing power. We can hold in our heads at most 7+-2 things at once (not an exact number). We can't remember everything and we aren't infinitely fast. So, if we just keep adding things to and modifying code we will reach this limit quite quickly. If the code isn't in our capabilities there is a large risk of introducing bugs.
+As humans we have several limitations in our processing power. We can hold in our head at most 7+-2 things at once (not an exact number). We can only remember some finite amount and we aren't infinitely fast. So, if we just keep adding things to our code we will reach this limit quite quickly and we won't be able to reason about our code. If the code isn't in our capabilities there is a large risk of introducing bugs.
 
-First limititation is typing speed. The solution to this is reducing the repetetive code. In it's simplest form, if we have three places where we use similar code/structure, we can group it and replace it with functions. In a more complex way, we can implement a domain specific language to do the grunt work and leave us writing about the important things. These two skills are lazyness and recognizing repetition. This also removes friction from the coding process, since we don't have to repeat ourselves.
+First limititation is typing speed. The solution to this is reducing the repetetive code. In it's simplest form, if we have three places that uses similar code or structure, we can group it and replace it with functions. In a more complex way, we can implement a domain specific language to do the grunt work and leave us writing about the important things. This also removes friction from the coding process, since we don't have to repeat ourselves.
 
 Next limitation is reading speed and our memory. If our whole code base is above 10,000,000 LOC it would require several weeks to read it through, let alone understand and remember it. The only solution here is to keep your LOC down by removing repetition and building abstractions.
 
 Finally the most important limitation is our brain processing power. If we need to simulate and understand how 10 things interact with each other, we won't able to think about simultanously. Since most of the time there are hundreds or more things interacting, knowing how to reason about them is the most important skill of any good developer.
 
-This skill can be called "handling complexity", although there are several sides to it. This skill is the most difficult to learn as a programmer, since the essence of it is about dealing with things that you are not capable of understanding entierly. So what are the basic ways to handle complexity?
+This skill can be called "handling complexity", although there are several sides to it. This skill is the most difficult to learn as a programmer, since the essence of it is how to deal with things that you are not capable of understanding entierly. So what are the basic ways to handle complexity?
 
-The first is by training your processing capabilities and memory. This can be done by studying systems and trying to understand them. There's a big problem with this, it doesn't scale. We may now be able to think about 10 things but when we need to modify or add to it our brain will still make mistakes.
+The first is by training your processing capabilities and memory. This can be done by studying systems and trying to understand them. There's a big problem with this, it doesn't scale. We may now be able to think about 10 things, but when we need to modify or add to it our brain will still make mistakes.
 
 Next rather simple way to handle complexity is by setting limitations, using consistent style and using idioms. These can remove a lot of thinking required to read code.
 
@@ -267,32 +267,40 @@ One example would be::
 	x += 1;
 	y = x*x;
 
-If we use inconsistent style our code will become hard to read similarly to a book that is written in different languages and in mid-sentence goes over to a poem. Keeping consistent style (after practicing) is easy and has great benefits.
+If we use inconsistent style our code will become hard to read similarly to a book that is written in different languages and in mid-sentence goes over to a poem.Keeping consistent style is easy and has great benefits.
 
-When using idioms we can start to intuitively reason about code. If you've had a lot of experience in C-style `for` loops then some of these will feel more natural than others::
+When we use idioms we can start to intuitively reason about code. If you've had a lot of experience in C-style `for` loops then some of these will feel more natural than others::
 
-	for( i = 0; i <= length-1; i += 1) {}
+	for( i = 0; i <= length-1; i += 1) {
+		...
+	}
 
-	for( i = 0; i < length; i++ ) {}
+	for( i = 0; i < length; i++ ) {
+		...
+	}
 
-	for( i = 0; length > i; i++ ) {}
+	for( i = 0; length > i; i++ ) {
+		...
+	}
 
-	for( i = 0; length-1 >= i; i = i + 1 ) {}
+	for( i = 0; length-1 >= i; i = i + 1 ) {
+		...
+	}
 
-Although all of them say the same thing our intuition will notify, if it's not our usual idiomatic way. If our intuition tells us that our code is wrong, although it is correct, it would be better to rewrite code such that it feels nice.
+Although all of them say the same thing our intuition will say "this feels weird". If our intuition tells us that our code is wrong, although it is correct, it would be better to rewrite code such that it feels correct.
 
 	If our language use is pure and beautiful many mistakes and errors will pop out like a red dot on a black screen.
 
-The next strategy for handling complexity is ignoring things. We run our code on an OS that we can most of the time ignore. In a similar sense there are parts of code that do not affect other parts of code - so called invariants. With ignoring we can also accidentally ignore important things - so the question is how to write code such that it is easy to ignore things?
+The next strategy for handling complexity is ignoring things. We run our code on an OS that we can most of the time ignore. In a similar sense there are parts of code that do not affect other parts of code. By ignoring we can also accidentally ignore important things - so the question is how to write code such that it is easy to ignore things?
 
-One strategy is to divide code into parts that are not dependent on each other. The other strategy for ignoring things is abstraction. Abstractions gives us ability to think about things without dealing details. Understanding different abstractions, how to make and use them is needed to make simple programs. Quite good overview on them can be seen on [Wikipedia](http://en.wikipedia.org/wiki/Abstraction_(computer_science)).
+One strategy is to divide code into parts that are not dependent on each other. The other strategy for ignoring things is abstraction. Abstractions gives us ability to think about things without dealing details. Understanding different abstractions, how to make and use them is needed to make simple programs.
 
-When trying to make good abstractions it's important to know several ways of doing something. Never be satisfied with the first solution because it rarely is the best solution.
+To choose best abstractions it is necessary to know several ways of doing something. Never be satisfied with the first solution because it rarely is the best solution.
 
-It's also important to realize that abstraction is not the end goal in itself. By over-abstracting we can start to increase the complexity again. Code and model (abstraction) should be in balance. In the same we can have too much code, we can have too many abstract ideas.
+It's also important to realize that abstraction is not an end goal in itself. By over-abstracting we can start to increase the complexity again. Code and model (abstraction) should be in balance. In the same we can have too much code, we can have too many abstract ideas.
 
 Finally, when making things simpler it's also necessary to have a good understanding what "simple" and "complex", "easy" and "hard", "complecting" and "composing" mean. An excellent overview of those words was given by Rich Hickey in "Simple Made Easy".
-When we do not understand what simple exactly means we won't understand what our goal is.
+When we do not understand what "simple" exactly means we won't understand what our goal is.
 
 	Making complexity is easy.
 	Using complexity is hard.
