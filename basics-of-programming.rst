@@ -81,21 +81,15 @@ The first important insight about computers is that
 
 	Computers are stupid... very, very stupid.
 
-If a person moves from using computers to programming this may feel weird. The computer seems intelligent to a user, we use language to convey instructions to the computer and that also looks like it understands things. The simplest example of such intelligence would be Google.
+This insight may feel weird if a person moves from using computers to programming. The computer seems intelligent to a user, we use language to convey instructions to the computer and it also looks like it can understand. The simplest example of such intelligence would be Google.
 
-What happens when people process language? For example when I say to you "elephant is pink", you probably will imagine a pink elephant, with a trunk, a few ears, legs and a tail. We have a lot of assumptions about things. Even the color pink is a thing we assume to exist.
+As humans we have a lot of assumptions about things. For example when I say "elephant is pink", you probably will imagine a pink elephant, with a trunk, a few ears, legs and a tail. Even the color pink is a thing we assume to exist.
 
-Now when we do the same thing in some programming language::
+When we do the same thing in some programming language::
 
 	elephant = "pink"
 
-Language wise we read it the same "elephant is pink", but the actual undelying context is totally different. Elephant isn't an animal anymore it's a reference in memory and "=" is not a descriptive term but an assignment. "pink" is not a color anymore but just a string, an array of numbers. When saying this in a computer, the meaning changes although the language stays the same.
-
-In the same way, if we have a program drawing a rectangle on the screen, then making a new variable and writing::
-
-	y = 50
-
-Doesn't make the rectangle move to that position. It must be used together with everything else to make it work. We need to make things interact before they have an effect on other things.
+We still read the code "elephant is pink", but the actual undelying context is totally different. Elephant isn't an animal anymore, it's a reference in memory, and "=" is not a descriptive term, but an assignment. "pink" is not a color anymore but just a string, an array of numbers. Computer language is different from regular language since everything has a single well defined meaning.
 
 To make this concept more understandable lets consider this program::
 
@@ -117,9 +111,13 @@ In the imperative language "=" means assignment, meaning we assign this value to
 
 None of these behaviours is "wrong" (remember computers are stupid and they don't care what the "=" thing means), but some of these behaviours may be more intuitive and favorable depending on the context.
 
-We found several skills here: shifting through the different meanings of the program, destroying your assumptions and misconceptions. Capability of understanding flaws in your thinking and correct them as needed to match the program.
+In the same way, if we have a program drawing a rectangle on the screen, then making a new variable and writing::
 
+	y = 50
 
+Doesn't make the rectangle move to that position. It must be used together with everything else to make it work. We need to make things interact before they have an effect on other things.
+
+Programmers need this capability of understanding their assumptions and misconceptions to understand the program better. They also must correct misconceptions to match the actual context.
 
 Making things concrete
 ----------------------
