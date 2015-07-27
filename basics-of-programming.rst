@@ -10,7 +10,7 @@ In the simplest terms programmer is a problem solver. There are some things that
 
 Here's how these things work together:
 
-.. image:: http://github.com/egonelbre/spark/raw/master/graphics/model.png
+.. image:: https://raw.githubusercontent.com/egonelbre/spark/master/graphics/model.png
 
 Let's call the things that affect programmer forces and give them some names:
 
@@ -55,7 +55,7 @@ The problem with friction is that it makes people feel stressed and stupid - if 
 
 Let us consider what happens if a person "cheats" while learning.
 
-.. image:: http://github.com/egonelbre/spark/raw/master/graphics/model-shortcut.png
+.. image:: https://raw.githubusercontent.com/egonelbre/spark/master/graphics/model-shortcut.png
 
 Imagine you are solving a sudoku and at stage 2, where you hit your first difficult problem, someone else comes and solves the sudoku for you. This would mean that you won't feel the "high" and are less likely to try solving a sudoku again. The perceived reward has also decreased. More importantly you fail to learn skills required to overcome obstacles 2 and 3.
 
@@ -158,7 +158,7 @@ What do we mean by "reach"? This means that when "box.x > right". What do we mea
 	// box.x = left;
 	// when update {
 	//    box.x = box.x + speed
-	//    when box.x > right 
+	//    when box.x > right
 	// 		speed = -10
 	// }
 
@@ -258,10 +258,10 @@ The first is by training your processing capabilities and memory. This can be do
 Next rather simple way to handle complexity is by setting limitations, using consistent style and using idioms. These can remove a lot of thinking required to read code.
 
 One example would be::
-	
-	x = 4; 
+
+	x = 4;
 	y = (++x)*x;
-	
+
 	// compared to
 	x = 4;
 	x += 1;
@@ -304,7 +304,7 @@ When we do not understand what "simple" exactly means we won't understand what o
 
 	Making complexity is easy.
 	Using complexity is hard.
-	Understanding complexity is impossible.	
+	Understanding complexity is impossible.
 
 	Understanding simplicity is possible.
 	Using simplicity is easy.

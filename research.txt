@@ -1,0 +1,61 @@
+=================================
+Better Programming
+=================================
+
+Being a better programmer
+=========================
+
+http://www.flipcode.com/archives/Being_A_Better_Programmer.shtml
+
+Plan For The Worst
+Expect To Forget
+Documentation
+Human Error and Monkey Business
+An Engine Has Belts And Rods
+A Shiny New Hammer
+Admit Your Own Limits
+Fix It, Don't Hack It
+Step Softly and Carry Nothing
+Don't Get Personal
+
+
+The Scams That Derail Programming
+=================================
+
+http://youtu.be/c5Xh2Go-jkM?t=50m31s
+
+== Axes ==
+
+abstract   - linguistic representation of your ideas
+tangible   - UX, UI, real results of the abstractions
+aesthetics - artistically beautiful or pleasing appearance
+stability  - reliability and resistance to change
+
+== Level 1
+
+abstract   : compilers
+tangible   : usability
+aesthetics : design, art, poetry, improv
+stability  : statistics
+
+== Level 2
+
+abstract   -> tangible   : automated testing
+tangible   -> abstract   : design, then develop
+aesthetics -> stability  : usability studies
+stability  -> aesthetics : finite state machines
+
+== Level 3
+
+abstract -> aesthetics : create APIs that read like English
+abstract -> stability  : automated testing
+tangible -> asethetics : color & typography
+tangible -> stability  : learn survey design
+
+aesthetic -> abstract : work on writing skills
+aesthetic -> tangible : improv, surrealism, poetry
+stability -> abstract : conduct code reviews of your code [reverse, print]
+                        (write yourself an email)
+stability -> tangible : track failure metrics in usability
+                        AB testing
+

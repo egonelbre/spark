@@ -135,9 +135,7 @@ Anything else should be self-evident from the code itself, and if it's not, it's
 Reading 
 -------------------
 
-One thing that's overlooked is reading code.
-
-	I'm unable to imagine a great writer who has never read a book - in the same way I'm unable to imagine a great programmer who has never read a program.
+One thing that is often overlooked is reading.
 
 .. TODO: code literacy
 .. TODO: shakespeare of code
@@ -147,10 +145,14 @@ Code
 
 .. TODO: write
 
+	I am unable to imagine a great writer who has never read a book - in the same way I am unable to imagine a great programmer who has never read a program.
+
 	"Reading how to write well."
 	state machine
 	Nile
 	comments
+
+Kevlin Henney - Cool Code
 
 Code Review
 ~~~~~~~~~~~
@@ -324,12 +326,15 @@ Paradigm
 
 .. TODO: write
 
+http://zedshaw.com/essays/kitchensink.html
 https://dl.dropbox.com/u/14031931/Papers/VanRoyChapter.pdf
 
 	Declarative / Imparative
 
 Language
 ~~~~~~~~
+
+http://learnpythonthehardway.org/book/advice.html
 
 .. TODO: write
 
@@ -360,3 +365,5 @@ What every programmer should know about memory
 
 What every programmer should know about floating point numbers
 
+In Real Life
+------------

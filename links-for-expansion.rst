@@ -63,6 +63,12 @@ http://www.carlopescio.com/2012/03/episode-2-controller-strikes-back.html
 Ian Piumarta
 ~~~~~~~~~~~~
 
+Kevlin Henney
+~~~~~~~~~~~~~
+
+http://www.infoq.com/author/Kevlin-Henney
+https://vimeo.com/44792649
+
 Destroy All Software
 ~~~~~~~~~~~~~~~~~~~~
 

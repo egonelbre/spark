@@ -21,3 +21,6 @@ In this sense, projects, such as Viewpoint Research Institutes STEPS project tha
 It's wise to listen to smarter people than yourself. The people I listen to are Alan Kay, Rich Hickey, Ian Piumarta, Gerald Jay Sussman and Carlo Pescio. Mainly because they make me question my own assumptions/techniques. They don't just talk about the implementation, but they talk about things on a philosophical level.
 
 Maybe someday I can write more about this topic, for now I don't consider myself smart enough.
+
+
+.. TODO: http://zedshaw.com/essays/master_and_expert.html
